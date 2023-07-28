@@ -9,7 +9,7 @@ let switchSoundsEnabled = false;
 let startSound = new Audio("audio/VEX IQ countdown.mp3");
 let endSound = new Audio("https://www.studentroboticseducation.com/wp-content/uploads/2022/07/Match-end-sound.mp3");
 let switchSound = new Audio("https://www.studentroboticseducation.com/wp-content/uploads/2022/07/Match-driver-switch-sound.mp3");
-switchSound.volume = 0.2; // 40% volume
+switchSound.volume = 0.5; // 40% volume
 let shortBeep = new Audio("https://www.studentroboticseducation.com/wp-content/uploads/2022/07/Short-beep.mp3");
 let lastCount = new Audio("audio/final countdown.mp3");
 
