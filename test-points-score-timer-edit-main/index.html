@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="timerContainer" class="matchTimer">
+        <div>
+            <h1>STEM Lab Habitat for Humanity</h1>
+            <p id="timerText">60 seconds</p>
+        </div>
+        <div class="buttonContainer">
+            <button id="startBtn" class="timerBtn greenBtn" type="button">Start</button>
+            <button id="stopBtn" class="timerBtn redBtn" type="button">Stop</button>
+            <button id="resetBtn" class="timerBtn blueBtn" type="button">Reset</button>
+        </div>
+        <div class="columnContainer">
+            <button id="countdownSwitch" class="wideBtn whiteBtn" type="button">Enable Switch Sounds</button>
+            <button id="scoreSwitch" class="wideBtn whiteBtn" type="button">Score Calculator</button>
+        </div>
+    </div>
+    <div id="scoreContainer" class="scoreTracker">
+        <h1>Habitat for Humanity Score Calculator</h1>
+        <div class="inputContainer">
+            <div>
+                <section class="inputSection">
+                    <label for="waterTower">Water Tower upright</label>
+                </section>
+                <section class="inputSection">
+                    <label for="waterPipe">Water Pipe placed partial-full</label>
+                </section>
+                <section class="inputSection">
+                    <label for="windTurbine">Wind Turbine rotated</label>
+                </section>
+                <section class="inputSection">
+                    <label for="foodDrop">Crop dropped into processor</label>
+                </section>
+                <section class="inputSection">
+                    <label for="foodMove">Food moved</label>
+                </section>
+                <section class="inputSection">
+                    <label for="bridge">Bridge lowered</label>
+                </section>
+                <section class="inputSection">
+                    <label for="houseMove">House components moved</label>
+                </section>
+                <section class="inputSection">
+                    <label for="houseBuild">House built</label>
+                </section>
+            </div>
+            <div class="inputValueHolder">
+                <input type="number" id="waterTower" class="inputValue" placeholder="" min="0" max="1">
+                <input type="number" id="waterPipe" class="inputValue" placeholder="" min="0" max="2">
+                <input type="number" id="windTurbine" class="inputValue" placeholder="" min="0" max="1">
+                <input type="number" id="foodDrop" class="inputValue" placeholder="" min="0" max="1">
+                <input type="number" id="foodMove" class="inputValue" placeholder="" min="0" max="1">
+                <input type="number" id="bridge" class="inputValue" placeholder="" min="0" max="1">
+                <input type="number" id="houseMove" class="inputValue" placeholder="" min="0" max="3">
+                <input type="number" id="houseBuild" class="inputValue" placeholder="" min="0" max="1">
+            </div>
+        </div>
+        <h1 id="finalScore">Score: 0</h1>
+        <div class="columnContainer">
+            <button id="clearBtn" class="wideBtn redBtn" type="button">Clear Fields</button>
+            <button id="timerSwitch" class="wideBtn whiteBtn" type="button">Match Timer</button>
+        </div>
+    </div>
+    <div id="logo">
+        <img src="./Images/STEM Space 4 Kids 1 JPG.jpg" class="logo">
+
+    </div>
+</body>
+</html>
